@@ -42,7 +42,7 @@ const Mzari: React.FC = () => {
           <View style={tw`flex flex-row justify-between items-center`}>
             <View>
               <Text style={tw`text-black font-bold text-2xl`}>Your Accommodation</Text>
-              <Text style={tw`text-black font-bold text-xl`}>In Chinhoyi!</Text>
+              <Text style={tw`text-black font-bold text-2xl`}>In Chinhoyi!</Text>
             </View>
          
           </View>
