@@ -14,12 +14,12 @@ WebBrowser.maybeCompleteAuthSession();
 
 type RootStackParamList = {
   Main: undefined;
-  StudentSignUp: undefined;
+  LandlordSignUp: undefined;
   ForgotPassword: undefined;
 
 };
 
-const StudentLogIn: React.FC = () => {
+const LandlordSignUp: React.FC = () => {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -123,7 +123,7 @@ const StudentLogIn: React.FC = () => {
       <View style={tw`absolute bottom-6 w-full items-center`}>
         <Text style={tw`text-gray-500`}>
           Don't have an account?
-          <Text onPress={() => navigation.navigate('StudentSignUp')} style={tw`font-bold text-black`}>
+          <Text onPress={() => navigation.navigate('Main')} style={tw`font-bold text-black`}>
             {' '}Sign Up
           </Text>
         </Text>
@@ -132,4 +132,4 @@ const StudentLogIn: React.FC = () => {
   );
 };
 
-export default StudentLogIn;
+export default LandlordSignUp;

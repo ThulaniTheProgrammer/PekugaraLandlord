@@ -8,7 +8,7 @@ import tw from 'twrnc';
 type RootStackParamList = {
   HouseDetail: undefined;
   LandLordLogIn: undefined;
-  StudentLogIn: undefined;
+  LandlordLogIn: undefined;
   Main: undefined;
 };
 
@@ -36,7 +36,7 @@ const Welcome: React.FC = () => {
         <Text style={tw`text-white font-bold text-2xl mt-2`}>ACCOMMODATION</Text>
         <Text style={tw`text-gray-300 mt-12`}>Find the right accommodation</Text>
         <Text style={tw`text-gray-400`}>at just a tap</Text>
-        <View style={tw`w-full bg-[#ff914d] rounded-xl absolute bottom-2` }  onTouchEnd={() => navigation.navigate('StudentLogIn')}>
+        <View style={tw`w-full bg-[#ff914d] rounded-xl absolute bottom-2` }  onTouchEnd={() => navigation.navigate('LandlordLogIn')}>
           <Text style={tw`text-center text-white font-semibold text-xl py-2`} >Explore</Text>
         </View>
       </View>
